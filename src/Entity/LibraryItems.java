@@ -3,6 +3,7 @@ package Entity;
 public class LibraryItems {
     private String id;
     private String title;
+    private String author;
     private Boolean isAvilable;
 
     public void setId(String id){
@@ -14,10 +15,19 @@ public class LibraryItems {
     public void setIsAvilable(boolean isAvilable){
         this.isAvilable=true;
     }
+    public void setAuthor(String author){
+        this.author=author;
+    }
     public String getId(){
         return id;
     }
     public String getTitle(){
         return title;
+    }
+    public Boolean getIsAvilable(){
+        return isAvilable;
+    }
+    public String getAuthor(){
+        return author;
     }
 }
